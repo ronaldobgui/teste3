@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS operadora (
+  reg_ans INT NOT NULL,
+  cnpj BIGINT NOT NULL,
+  razao_social VARCHAR(150) NOT NULL,
+  nome_fantasia VARCHAR(100),
+  modalidade VARCHAR(75) NOT NULL,
+  logradouro VARCHAR(75) NOT NULL,
+  numero VARCHAR(25) NOT NULL,
+  complemento VARCHAR(50),
+  bairro VARCHAR(50) NOT NULL,
+  cidade VARCHAR(35) NOT NULL,
+  uf CHAR(2) NOT NULL,
+  cep VARCHAR(8) NOT NULL,
+  ddd CHAR(2),
+  telefone VARCHAR(20),
+  fax VARCHAR(15),
+  email VARCHAR(100),
+  representante VARCHAR(100) NOT NULL,
+  cargo_representante VARCHAR(50) NOT NULL,
+  dt_reg_ans DATE NOT NULL,
+  PRIMARY KEY (reg_ans)
+);
